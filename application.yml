@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: expense-tracker
+  cloud:
+    config:
+      override-system-properties: false
+
+# Common logging level
+logging:
+  level:
+    root: INFO
+
+# Eureka location (update with your IP or localhost)
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
